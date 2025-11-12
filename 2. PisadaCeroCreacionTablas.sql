@@ -99,7 +99,6 @@ CREATE TABLE GrupoImpacto
     Gri_Privacidad       VARCHAR(20)  NULL,
     Gri_FechaCreacion    DATETIME     NULL,
     Gri_CodigoInvitacion VARCHAR(16)  NULL,
-    Usu_Id               CHAR(10)     NOT NULL,
     PRIMARY KEY (Cri_Id)
 );
 
@@ -110,7 +109,8 @@ CREATE TABLE GrupoMiembro
     Grm_RolGrupo     VARCHAR(40)  NULL,
     Grm_FechaIngreso DATETIME     NULL,
     Grm_FechaSalida  DATETIME     NULL,
-    Grm_Estado       VARCHAR(20)  NULL
+    Grm_Estado       VARCHAR(20)  NULL,
+    PRIMARY KEY (Usu_Id, Cri_Id)
 );
 
 CREATE TABLE Institucion
@@ -157,7 +157,8 @@ CREATE TABLE LogroUsuario
     Log_Id             CHAR(10)     NOT NULL,
     Lgu_FechaObtencion DATETIME     NULL,
     Lgu_Evidencia      VARCHAR(120) NULL,
-    Lgu_Estado         VARCHAR(20)  NULL
+    Lgu_Estado         VARCHAR(20)  NULL,
+    PRIMARY KEY (Usu_Id, Log_Id)
 );
 
 CREATE TABLE MetaUsuario
@@ -338,7 +339,8 @@ CREATE TABLE RegistroParametro
     Par_Id                  CHAR(10)     NOT NULL,
     Rep_ValorCapturado      VARCHAR(120) NULL,
     Rep_UnidadPersonalizada VARCHAR(30)  NULL,
-    Rep_FuenteDato          VARCHAR(60)  NULL
+    Rep_FuenteDato          VARCHAR(60)  NULL,
+    PRIMARY KEY (Rea_Id, Par_Id)
 );
 
 CREATE TABLE ReporteGenerado
@@ -421,7 +423,8 @@ CREATE TABLE UsuarioInstitucion
     Usu_Id               CHAR(10)    NOT NULL,
     Uin_RolInstitucional VARCHAR(60) NULL,
     Uin_FechaInicio      DATE        NULL,
-    Uin_FechaFin         DATE        NULL
+    Uin_FechaFin         DATE        NULL,
+    PRIMARY KEY (Ins_Id, Usu_Id)
 );
 
 CREATE TABLE UsuarioRol
@@ -429,7 +432,8 @@ CREATE TABLE UsuarioRol
     Rol_Id              CHAR(10) NOT NULL,
     Usu_Id              CHAR(10) NOT NULL,
     Uro_FechaAsignacion DATETIME NULL,
-    Uro_FechaCese       DATETIME NULL
+    Uro_FechaCese       DATETIME NULL,
+    PRIMARY KEY (Rol_Id, Usu_Id)
 );
 
 CREATE TABLE UsuarioSegmento
@@ -438,5 +442,6 @@ CREATE TABLE UsuarioSegmento
     Usu_Id              CHAR(10)    NOT NULL,
     Use_FechaAsignacion DATETIME    NULL,
     Use_FechaFin        DATETIME    NULL,
-    Use_Fuente          VARCHAR(60) NULL
+    Use_Fuente          VARCHAR(60) NULL,
+    PRIMARY KEY (Seg_Id, Usu_Id)
 );

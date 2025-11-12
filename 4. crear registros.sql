@@ -426,18 +426,18 @@ VALUES
 GO
 
 PRINT 'Insertando en GrupoImpacto...';
-INSERT INTO GrupoImpacto (Cri_Id, Gri_Nombre, Gri_Proposito, Gri_Privacidad, Gri_FechaCreacion, Gri_CodigoInvitacion, Usu_Id)
+INSERT INTO GrupoImpacto (Cri_Id, Gri_Nombre, Gri_Proposito, Gri_Privacidad, Gri_FechaCreacion, Gri_CodigoInvitacion)
 VALUES
-('GRI000001','Movilidad Cero','Reducir emisiones en traslados corporativos','Privado','2023-06-01 09:00:00','INVITA1','USU000001'),
-('GRI000002','Oficina Circular','Compartir acciones de reciclaje','Privado','2023-06-05 09:00:00','INVITA2','USU000002'),
-('GRI000003','Familias Eco','Buenas practicas en casa','Privado','2023-06-10 09:00:00','INVITA3','USU000003'),
-('GRI000004','Viajeros Conscientes','Ideas para viajes bajos en carbono','Publico','2023-06-15 09:00:00','INVITA4','USU000004'),
-('GRI000005','Agua Responsable','Retos de ahorro de agua','Privado','2023-06-20 09:00:00','INVITA5','USU000005'),
-('GRI000006','Tech Verde','Reducir huella digital','Publico','2023-06-22 09:00:00','INVITA6','USU000006'),
-('GRI000007','Salud Activa','Habitos saludables y movilidad','Privado','2023-06-25 09:00:00','INVITA7','USU000007'),
-('GRI000008','Educacion Sostenible','Ideas para escuelas verdes','Publico','2023-06-28 09:00:00','INVITA8','USU000008'),
-('GRI000009','Retail Responsable','Reducir impacto en cadenas retail','Privado','2023-07-01 09:00:00','INVITA9','USU000009'),
-('GRI000010','Salud Comunitaria','Cuidados preventivos con baja huella','Publico','2023-07-05 09:00:00','INVITA10','USU000010');
+('GRI000001','Movilidad Cero','Reducir emisiones en traslados corporativos','Privado','2023-06-01 09:00:00','INVITA1'),
+('GRI000002','Oficina Circular','Compartir acciones de reciclaje','Privado','2023-06-05 09:00:00','INVITA2'),
+('GRI000003','Familias Eco','Buenas practicas en casa','Privado','2023-06-10 09:00:00','INVITA3'),
+('GRI000004','Viajeros Conscientes','Ideas para viajes bajos en carbono','Publico','2023-06-15 09:00:00','INVITA4'),
+('GRI000005','Agua Responsable','Retos de ahorro de agua','Privado','2023-06-20 09:00:00','INVITA5'),
+('GRI000006','Tech Verde','Reducir huella digital','Publico','2023-06-22 09:00:00','INVITA6'),
+('GRI000007','Salud Activa','Habitos saludables y movilidad','Privado','2023-06-25 09:00:00','INVITA7'),
+('GRI000008','Educacion Sostenible','Ideas para escuelas verdes','Publico','2023-06-28 09:00:00','INVITA8'),
+('GRI000009','Retail Responsable','Reducir impacto en cadenas retail','Privado','2023-07-01 09:00:00','INVITA9'),
+('GRI000010','Salud Comunitaria','Cuidados preventivos con baja huella','Publico','2023-07-05 09:00:00','INVITA10');
 GO
 
 PRINT 'Insertando en GrupoMiembro...';

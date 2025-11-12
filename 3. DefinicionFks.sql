@@ -1,5 +1,7 @@
 Use PisadaCero
 
+-- Creación de Foreign Keys
+
 ALTER TABLE UsuarioSegmento
     ADD CONSTRAINT FK_SegmentoObjetivo_TO_UsuarioSegmento
         FOREIGN KEY (Seg_Id) REFERENCES SegmentoObjetivo (Seg_Id);
