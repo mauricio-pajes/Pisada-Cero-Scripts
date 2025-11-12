@@ -503,16 +503,16 @@ GO
 PRINT 'Insertando en ResumenHuella...';
 INSERT INTO ResumenHuella (Res_Id, Res_Co2eTotal, Res_VariacionVsPeriodoPrevio, Res_EquivalenciaArboles, Res_EquivalenciaAhorro, Res_Tendencia, Usu_Id)
 VALUES
-('RES000001',1.25,-0.12,5.4,45.0,'Mejora','USU000001'),
-('RES000002',2.40,0.05,3.2,30.0,'Alza','USU000002'),
-('RES000003',1.10,-0.08,6.1,52.0,'Mejora','USU000003'),
-('RES000004',1.80,0.02,4.3,38.5,'Estable','USU000004'),
-('RES000005',1.35,-0.10,5.0,41.0,'Mejora','USU000005'),
-('RES000006',1.90,-0.03,3.8,33.0,'Mejora','USU000006'),
-('RES000007',2.10,0.04,3.5,28.0,'Alza','USU000007'),
-('RES000008',1.15,-0.06,6.4,55.0,'Mejora','USU000008'),
-('RES000009',1.65,0.01,4.8,39.0,'Estable','USU000009'),
-('RES000010',1.45,-0.02,5.2,42.5,'Mejora','USU000010');
+('RES000001',8.12,NULL,5.4,45.0,'Mejora','USU000001'),
+('RES000002',0.48,NULL,3.2,30.0,'Mejora','USU000002'),
+('RES000003',8.25,NULL,6.1,52.0,'Mejora','USU000003'),
+('RES000004',0.78,NULL,4.3,38.5,'Mejora','USU000004'),
+('RES000005',3.60,NULL,5.0,41.0,'Mejora','USU000005'),
+('RES000006',36.00,NULL,3.8,33.0,'Mejora','USU000006'),
+('RES000007',128.00,NULL,3.5,28.0,'Alza','USU000007'),
+('RES000008',0.30,NULL,6.4,55.0,'Mejora','USU000008'),
+('RES000009',0.06,NULL,4.8,39.0,'Estable','USU000009'),
+('RES000010',0.45,NULL,5.2,42.5,'Mejora','USU000010');
 GO
 
 PRINT 'Insertando en RecomendacionUsuario...';
@@ -572,7 +572,12 @@ VALUES
 ('REA000007','2023-07-07 11:20:00','2023-07-06 23:00:00',800.0,128.00,'Manual','Vuelo a Cusco','USU000007','TIP000007'),
 ('REA000008','2023-08-07 18:00:00','2023-08-07 17:00:00',6.0,0.30,'Automatico','Horas conectadas plataforma','USU000008','TIP000008'),
 ('REA000009','2023-09-08 20:30:00','2023-09-08 19:00:00',3.0,0.06,'Manual','Taller virtual','USU000009','TIP000009'),
-('REA000010','2023-10-09 09:10:00','2023-10-08 09:00:00',1.0,0.45,'Manual','Chequeo anual','USU000010','TIP000010');
+('REA000010','2023-10-09 09:10:00','2023-10-08 09:00:00',1.0,0.45,'Manual','Chequeo anual','USU000010','TIP000010'),
+('REA000011','2023-02-10 07:30:00','2023-02-09 18:00:00',30.0,7.50,'Manual','Transporte semanal refuerzo','USU000001','TIP000001'),
+('REA000012','2023-01-18 13:00:00','2023-01-18 12:15:00',0.9,0.36,'Manual','Almuerzo ligero','USU000002','TIP000002'),
+('REA000013','2023-04-08 22:00:00','2023-04-08 21:00:00',18.0,9.90,'Automatico','Consumo extra fin de mes','USU000003','TIP000003'),
+('REA000014','2023-05-12 08:20:00','2023-05-12 07:30:00',7.0,0.84,'Manual','Reciclaje adicional','USU000004','TIP000004'),
+('REA000015','2023-06-15 11:05:00','2023-06-15 07:30:00',10.5,3.15,'Manual','Uso intensivo de agua','USU000005','TIP000005');
 GO
 
 PRINT 'Insertando en RegistroParametro...';
@@ -587,7 +592,12 @@ VALUES
 ('REA000006','PAR000007','450','PEN','Carga manual'),
 ('REA000002','PAR000008','1','dia','Auto declaracion'),
 ('REA000010','PAR000009','1','visita','Agenda medica'),
-('REA000009','PAR000010','3','hora','Registro campus');
+('REA000009','PAR000010','3','hora','Registro campus'),
+('REA000011','PAR000001','30.0','km','App movil'),
+('REA000012','PAR000008','0.9','dia','Auto declaracion'),
+('REA000013','PAR000002','18.0','kWh','Medidor inteligente'),
+('REA000014','PAR000006','7.0','kg','Formulario web'),
+('REA000015','PAR000003','10.5','m3','Lectura manual');
 GO
 
 COMMIT TRAN;
