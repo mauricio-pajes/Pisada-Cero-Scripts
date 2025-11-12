@@ -563,16 +563,16 @@ GO
 PRINT 'Insertando en RegistroActividad...';
 INSERT INTO RegistroActividad (Rea_Id, Rea_FechaRegistro, Rea_FechaActividad, Rea_Cantidad, Rea_Co2eCalculado, Rea_ModoCaptura, Rea_Observaciones, Usu_Id, Tip_Id)
 VALUES
-('REA000001','2024-01-05 07:00:00','2024-01-04 18:00:00',32.5,8.12,'Manual','Viaje ida y vuelta al trabajo','USU000001','TIP000001'),
-('REA000002','2024-01-05 12:00:00','2024-01-05 12:30:00',1.0,0.48,'Manual','Almuerzo vegetariano','USU000002','TIP000002'),
-('REA000003','2024-01-05 21:00:00','2024-01-05 20:00:00',15.0,8.25,'Automatico','Lectura de medidor','USU000003','TIP000003'),
-('REA000004','2024-01-06 09:30:00','2024-01-06 08:30:00',6.5,0.78,'Manual','Reciclaje semanal','USU000004','TIP000004'),
-('REA000005','2024-01-06 10:15:00','2024-01-06 07:00:00',12.0,3.60,'Manual','Uso moderado de agua','USU000005','TIP000005'),
-('REA000006','2024-01-07 08:45:00','2024-01-06 19:00:00',450.0,36.00,'Manual','Compras mensuales','USU000006','TIP000006'),
-('REA000007','2024-01-07 11:20:00','2024-01-06 23:00:00',800.0,128.00,'Manual','Vuelo a Cusco','USU000007','TIP000007'),
-('REA000008','2024-01-07 18:00:00','2024-01-07 17:00:00',6.0,0.30,'Automatico','Horas conectadas plataforma','USU000008','TIP000008'),
-('REA000009','2024-01-08 20:30:00','2024-01-08 19:00:00',3.0,0.06,'Manual','Taller virtual','USU000009','TIP000009'),
-('REA000010','2024-01-09 09:10:00','2024-01-08 09:00:00',1.0,0.45,'Manual','Chequeo anual','USU000010','TIP000010');
+('REA000001','2023-01-05 07:00:00','2023-01-04 18:00:00',32.5,8.12,'Manual','Viaje ida y vuelta al trabajo','USU000001','TIP000001'),
+('REA000002','2023-02-05 12:00:00','2023-02-05 12:30:00',1.0,0.48,'Manual','Almuerzo vegetariano','USU000002','TIP000002'),
+('REA000003','2023-03-05 21:00:00','2023-03-05 20:00:00',15.0,8.25,'Automatico','Lectura de medidor','USU000003','TIP000003'),
+('REA000004','2023-04-06 09:30:00','2023-04-06 08:30:00',6.5,0.78,'Manual','Reciclaje semanal','USU000004','TIP000004'),
+('REA000005','2023-05-06 10:15:00','2023-05-06 07:00:00',12.0,3.60,'Manual','Uso moderado de agua','USU000005','TIP000005'),
+('REA000006','2023-06-07 08:45:00','2023-06-06 19:00:00',450.0,36.00,'Manual','Compras mensuales','USU000006','TIP000006'),
+('REA000007','2023-07-07 11:20:00','2023-07-06 23:00:00',800.0,128.00,'Manual','Vuelo a Cusco','USU000007','TIP000007'),
+('REA000008','2023-08-07 18:00:00','2023-08-07 17:00:00',6.0,0.30,'Automatico','Horas conectadas plataforma','USU000008','TIP000008'),
+('REA000009','2023-09-08 20:30:00','2023-09-08 19:00:00',3.0,0.06,'Manual','Taller virtual','USU000009','TIP000009'),
+('REA000010','2023-10-09 09:10:00','2023-10-08 09:00:00',1.0,0.45,'Manual','Chequeo anual','USU000010','TIP000010');
 GO
 
 PRINT 'Insertando en RegistroParametro...';
