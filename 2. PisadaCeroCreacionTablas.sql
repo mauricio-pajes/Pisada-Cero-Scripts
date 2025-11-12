@@ -172,7 +172,7 @@ CREATE TABLE MetaUsuario
     PRIMARY KEY (Met_Id)
 );
 
-CREATE TABLE MovimientosPuntos
+CREATE TABLE MovimientoPuntos
 (
     Mov_Id               CHAR(10)     NOT NULL,
     Mov_TipoMovimiento   VARCHAR(40)  NULL,

@@ -1,0 +1,13 @@
+# Ignore Microsoft Word documents
+*.docx
+*.doc
+
+# Ignore temporary Word files
+~$*.docx
+~$*.doc
+*.tmp
+
+# Ignore specific context and document files
+doc_context.txt
+doc_context.xml
+UPCFinalProjectReportTemplateSample - Diseño de Base de Datos.docx

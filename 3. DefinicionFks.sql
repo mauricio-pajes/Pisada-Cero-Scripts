@@ -92,13 +92,13 @@ ALTER TABLE NotificacionEnviada
     ADD CONSTRAINT FK_ProgramacionNotificacion_TO_NotificacionEnviada
         FOREIGN KEY (Prn_Id) REFERENCES ProgramacionNotificacion (Prn_Id);
 
-ALTER TABLE MovimientosPuntos
-    ADD CONSTRAINT FK_Usuario_TO_MovimientosPuntos
+ALTER TABLE MovimientoPuntos
+    ADD CONSTRAINT FK_Usuario_TO_MovimientoPuntos
         FOREIGN KEY (Usu_Id) REFERENCES Usuario (Usu_Id);
 
 ALTER TABLE RedencionRecompensa
-    ADD CONSTRAINT FK_MovimientosPuntos_TO_RedencionRecompensa
-        FOREIGN KEY (Mov_Id) REFERENCES MovimientosPuntos (Mov_Id);
+    ADD CONSTRAINT FK_MovimientoPuntos_TO_RedencionRecompensa
+        FOREIGN KEY (Mov_Id) REFERENCES MovimientoPuntos (Mov_Id);
 
 ALTER TABLE RedencionRecompensa
     ADD CONSTRAINT FK_Recompensa_TO_RedencionRecompensa
